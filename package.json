@@ -1,0 +1,79 @@
+{
+  "name": "@publishvue/vue3complib",
+  "version": "1.0.47",
+  "private": false,
+  "author": {
+    "name": "hyperbotauthor",
+    "email": "hyperchessbotauthor@gmail.com"
+  },
+  "description": "Vue 3 component library.",
+  "keywords": [
+    "vue3",
+    "component",
+    "library"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "buildapp": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "build": "rollup -c",
+    "prep": "rm -r dist && yarn prettier && yarn build",
+    "createapp": "cp .vuerc ~/ && vue create . --preset createapp && vue add typescript",
+    "prettier": "prettier -w src",
+    "reset": "git fetch origin main && git reset --hard origin/main",
+    "watch": "rollup -c --watch",
+    "bserve": "yarn build && yarn serve",
+    "update": "yarn upgrade-interactive --latest"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@publishvue/chessground": "^8.1.7",
+    "@publishvue/chessopsnpmts": "^1.0.12",
+    "@publishvue/vue3complib": "^1.0.39",
+    "@types/lodash": "^4.14.176",
+    "core-js": "^3.6.5",
+    "lodash": "^4.17.21",
+    "octokit": "^1.7.0",
+    "remove": "^0.1.5",
+    "vue": "^3.0.0",
+    "vue-class-component": "^8.0.0-0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-url": "^6.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "@vue/cli": "^4.5.15",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-prettier": "6.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.0.0",
+    "node-fetch": "2.6.5",
+    "parse-git-config": "^3.0.0",
+    "postcss": "^8.3.11",
+    "prettier": "^2.4.1",
+    "rollup": "^2.58.3",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
+  },
+  "bugs": {
+    "url": "https://github.com/hyperbotauthor/vue3complib/issues",
+    "email": "hyperchessbotauthor@gmail.com"
+  },
+  "homepage": "https://github.com/hyperbotauthor/vue3complib#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyperbotauthor/vue3complib.git"
+  }
+}
