@@ -17,8 +17,6 @@ git config --global user.email $GIT_EMAIL
 
 echo "adding files to commit"
 
-git checkout demo
-
 git add .
 
 echo "making commit"
