@@ -44,12 +44,7 @@
         </td>
       </tr>
     </table>
-    <div class="comps">
-      <li>
-        <Labeled label="ChessboardExt">
-          <ChessboardExt :size="320" v-on:chessboardmoveplayed="event" />
-        </Labeled>
-      </li>
+    <div class="comps">      
       <li>
         <Labeled label="Perscheck">
           <Perscheck id="perscheck" v-on:perscheckchanged="event"></Perscheck>
