@@ -73,7 +73,7 @@
             :width="300"
             :height="100"
           >
-            <div caption="Custom tab">Custom tab c ontent.</div>
+            <div caption="Custom tab">Custom tab content.</div>
             <div>Tab 2 content.</div>
             <div>Tab 3 content.</div>
           </Tabpane>
