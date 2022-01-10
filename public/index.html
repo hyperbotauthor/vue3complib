@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <meta property="og:type" content="object" />
+    <meta property="og:site_name" content="Vue Analysis Board" />
+    <meta property="og:url" content="https://vueanalysisboard.netlify.app/" />
+    <meta
+      property="og:title"
+      content="Vue Analysis Board | A capable multi variant chess analysis tool"
+    />
+    <meta
+      property="og:description"
+      content="Build and practice your repertoire, annotate moves and store engine analysis under your lichess identity."
+    />
+    <meta property="og:image" content="favicon.ico" />
+
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script src="<%= BASE_URL %>pkce.js"></script>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script src="<%= BASE_URL %>oauth.js"></script>
+  </body>
+</html>
